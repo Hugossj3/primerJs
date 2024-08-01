@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+main{
+    text-align: center;
+    width: 40%;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#piedra, #papel, #tijera{
+    padding: 10px;
+    background-color: lightskyblue;
+    border-radius: 5px;
+    border-color: lightskyblue;
+}

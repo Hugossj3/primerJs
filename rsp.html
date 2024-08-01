@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Piedra, Papel y Tijera</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/scpjueguito.css">
+    </head>
+    <body>
+        <main>
+            <h1>Piedra, Papel o Tijera</h1>
+
+            <div class="flex-container">
+                <div class="flex-item">
+                    <button id="piedra" onclick="jugarPiedra()" value="piedra">
+                        🗿
+                    </button>
+                </div>
+                <div class="flex-item">
+                    <button id="papel" onclick="jugarPapel()" value="papel">
+                        📃
+                    </button>
+                </div>
+                <div class="flex-item">
+                    <button id="tijera" onclick="jugarTijera()" value="tijera">
+                        ✂️
+                    </button>
+                </div>
+            </div>
+            <p id="elecciones">Tu elección ha sido: | La máquina eligió: </p>
+            <p id="marcador">Jugador: 0| Computadora:0</p>
+        </main>
+        <script src="js/rsp.js"></script>
+    </body>
+</html>
