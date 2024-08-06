@@ -24,3 +24,19 @@ button{
     background-color: forestgreen;
     color: white;
 }
+.error{
+    color: red;
+    font-size: 10pt;
+}
+.sucess{
+    border-color: forestgreen;
+}
+.sucess:focus{
+    border-color: forestgreen;
+}
+.error-input{
+    border-color: red;
+}
+.error-input:focus{
+    border-color: red;
+}
