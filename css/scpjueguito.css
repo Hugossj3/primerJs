@@ -17,3 +17,11 @@ main{
     border-radius: 5px;
     border-color: lightskyblue;
 }
+@media (max-width:500px){
+    main{
+        width: 100%;
+    }
+    #piedra, #papel, #tijera{
+        padding: 20px;
+    }
+}

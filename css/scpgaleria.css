@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(../img/fondo.jpg);
+}
+h1{
+    text-align: center;
+    color: deeppink;
+}
+img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+header{
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    background-color: gray;
+    opacity: 1;
+    width: 98%;
+    height: auto;
+    padding: 5px;
+}
+.flexi{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flex-item{
+    margin: 5px;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: white;
+    width: 200px;
+}
