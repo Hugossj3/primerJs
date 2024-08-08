@@ -1,4 +1,6 @@
 let pass="";
+const modal=document.querySelector(".modal");
+const closeBtn=document.querySelector(".close");
 
 function validarNombre() {
     let nombre=document.getElementById("nombre").value;
@@ -111,6 +113,23 @@ function validarFecha(){
     
     return esCorrecto;
 }
+
+closeBtn.onclick=()=>{
+    modal.style.display="none";
+}
+
+document.getElementById("epolitica").addEventListener("click",function(){
+    modal.style.display="block";
+});
+
+
+
+
+window.onclick=(event)=>{
+    if(event.target.classList.contains("modal-content")){
+        modal.style.display="none";
+    }
+}
 document.getElementById("contra").addEventListener("input",validarContra);
 document.getElementById("cContra").addEventListener("input",validarConfi);
 
@@ -124,8 +143,11 @@ document.getElementById("registro").addEventListener("submit",
         let cVal=validarConfi();
         let fVal=validarFecha();
         let tVal=validarFono();
+        let obligao=document.getElementById("robarDatos");
 
-        if(nVal && eVal && pVal && cVal && fVal && tVal){
+        if(!obligao.checked){
+            alert("Tiene que aceptar los terminos condiciones. Papi aqui tenemos que comer de algo");
+        }else if(nVal && eVal && pVal && cVal && fVal && tVal){
             alert("Formulario enviado con exito");
             this.reset();
         }else{

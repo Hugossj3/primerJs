@@ -16,25 +16,39 @@
         <h1>Formulario de Registro</h1>
         <form id="registro">
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" required>
+            <input type="text" id="nombre" class="campos" required>
             <div class="error" id="nombreError"></div>
             <label for="fecha">Fecha de Nacimiento:</label>
-            <input type="date" id="fecha" required>
+            <input type="date" id="fecha" required  class="campos">
             <div class="error" id="fechaError"></div>
             <label for="phone">Telefono:</label>
-            <input type="tel" id="phone" required>
+            <input type="tel" id="phone" required  class="campos">
             <div class="error" id="phoneError"></div>
             <label for="correo">Email</label>
-            <input type="email" id="correo" required>
+            <input type="email" id="correo" required  class="campos">
             <div class="error" id="correoError"></div>
             <label for="contra">Contraseña</label>
-            <input type="password" id="contra" required>
+            <input type="password" id="contra" required  class="campos">
             <div class="error" id="contraError"></div>
             <label for="cContra">Confirmar Contraseña:</label>
-            <input type="password" id="cContra" required>
+            <input type="password" id="cContra" required  class="campos">
             <div class="error" id="2contraError"></div>
+            <div id="obligao">
+                <input type="checkbox" id="robarDatos">
+                <p>Acepte los terminos y condiciones de nuestra <span id="epolitica">politica de privacidad</span> </p>
+            </div>
             <button type="submit">Registrarse</button>
+            
         </form>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <p id="politica">
+                Estimado, aqui sus datos nos vale un pimiento pero nos forramos con ellos, asi que sepa que sus datos ahora nos pertenecen y haremos lo que queramos con ellos. Pase buena tarde <3
+            </p>
+            <span class="close">&times;</span>
+        </div>
+        
     </div>
 
     <a href="index.html">Volver</a>

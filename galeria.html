@@ -10,7 +10,12 @@
         <link rel="stylesheet" href="css/scpgaleria.css">
     </head>
     <body>
-        <h1>Mi Galeria de Fotos</h1>
+        <div class="encabezado">
+            <h1>Mi Galeria de Fotos</h1>
+            <button id="cuadro">En cuadro</button>
+            <button id="vModal">Ventana Modal</button>
+        </div>
+        
         <header>
             <img src="" alt="" id="principal">
             <p id="aviso">Seleccione alguna foto</p>
@@ -18,20 +23,28 @@
         </header>
         <div class="flexi">
             <div class="flex-item">
-                <img src="img/gojo.jpg" id="gojo" alt="gojo" class="fotos">
+                <img src="img/gojo.jpg" id="gojo" alt="gojo" class="fotos" data-full="img/gojo.jpg">
 
             </div>
             <div class="flex-item">
                 <img src="img/solo.webp" id="solo" alt="solo leveling"
-                class="fotos">
+                class="fotos" data-full="img/solo.webp">
 
             </div>
             <div class="flex-item">
-                <img src="img/kirito.jpg" id="kirito" alt="kirito" class="fotos">
+                <img src="img/kirito.jpg" id="kirito" alt="kirito" class="fotos" data-full="img/kirito.jpg">
                 
             </div>
             <div class="flex-item">
-                <img src="img/gsuku.png" id="sugo" alt="bestfight" class="fotos">
+                <img src="img/gsuku.png" id="sugo" alt="bestfight" class="fotos" data-full="img/gsuku.png">
+            </div>
+        </div>
+
+
+        <div id="imagenModal" class="modal">
+            <span class="close">&times;</span>
+            <div class="modal-content">
+                <img src="" alt="Imagen Ampliada" class="modal-image">
             </div>
         </div>
         <script src="js/galery.js" async defer></script>
