@@ -13,10 +13,11 @@ function guardarNombre(){
 
 function mostrarNombre(name){
     let h=new Date().getHours();
+    console.log(h);
     let tDia="";
     if(h<12){
         tDia="dias";
-    }else if(h<7){
+    }else if(h<19){
         tDia="tardes";
     }else{
         tDia="noches";
